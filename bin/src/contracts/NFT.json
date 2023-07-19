@@ -1,0 +1,251 @@
+{
+    "contractName": "NFT",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "helloWorld",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"helloWorld\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/PokeDexNFT.sol\":\"NFT\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc980984badf3984b6303b377711220e067722bbd6a135b24669ff5069ef9f32\",\"dweb:/ipfs/QmPHXMSXj99XjSVM21YsY6aNtLLjLVXDbyN76J5HQYvvrz\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708\",\"dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x006dd67219697fe68d7fbfdea512e7c4cb64a43565ed86171d67e844982da6fa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2455248c8ddd9cc6a7af76a13973cddf222072427e7b0e2a7d1aff345145e931\",\"dweb:/ipfs/QmfYjnjRbWqYpuxurqveE6HtzsY1Xx323J428AKQgtBJZm\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x3088eb2868e8d13d89d16670b5f8612c4ab9ff8956272837d8e90106c59c14a0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b81d9ff6559ea5c47fc573e17ece6d9ba5d6839e213e6ebc3b4c5c8fe4199d7f\",\"dweb:/ipfs/QmPCW1bFisUzJkyjroY3yipwfism9RRCigCcK1hbXtVM8n\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d\",\"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cc8841b3cd48ad125e2f46323c8bad3aa0e88e399ec62acb9e57efa7e7c8058c\",\"dweb:/ipfs/QmSqE4mXHA2BXW58deDbXE8MTcsL5JSKNDbm23sVQxRLPS\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol\":{\"keccak256\":\"0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c50fcc459e49a9858b6d8ad5f911295cb7c9ab57567845a250bf0153f84a95c7\",\"dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/ERC721.sol\":{\"keccak256\":\"0x77e3d07c695aa1403c807b4e13b6d22ab289c17d86a6f68e3fd03cbd7ca4cc42\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c7c8af69ef540e6a8032a059b9cf6fda8af3e7db31fd048511597981cc9d17fc\",\"dweb:/ipfs/QmTBE7JZD8fmVgdM4a7LQCSUf92adbHj6nnLe9sYMeDrg6\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/ERC721Enumerable.sol\":{\"keccak256\":\"0x0b677c25c442dd2baf5261c90eb9a0102551a6fa613b03bb704110156ca28545\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4462fb4b191a0999d33a1be8a72981790bf93813c31122b18293db69e5098923\",\"dweb:/ipfs/QmcHdyAXs8M168Ja7sTa8t4rJGhUStmAsR26pKzoNQyhs7\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/IERC721.sol\":{\"keccak256\":\"0xdd5ae3f51bef50f38e9d95ac9795d9720828e832046e28f354597ad22e22ad9a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0ecd29554626e8b9000b25db79895cf234d9556b669b81a7a98245f2c4873045\",\"dweb:/ipfs/QmSfH2SsyzRwrNG99YpifShizZdtYG2N4gJqCjXWZfHSPH\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/IERC721Enumerable.sol\":{\"keccak256\":\"0x168a21be49ac5c4064bd583ede1744929620808a11dc7c33ea349d7687e7afa6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9881d672b46a922a6a747e3317e76d2aa30780dbea515cbf24f716c1da2f69b4\",\"dweb:/ipfs/QmRq5mKtTmP9Y3rtW8tJFzA7YPbXnSntpMZFmsAkdZCVNE\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/IERC721Metadata.sol\":{\"keccak256\":\"0x867ef5399056dc94c3eb0a403ae2d758b151902a9223dfa50b9fa39cb815c2fb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://56a2ca5b54defdace0c7c17bc238e3c7df9875ac67f8a3483c43243a152722ce\",\"dweb:/ipfs/QmNgmCm69D3vkZn6Bh33qrjNyXeAa4vuBDeCAchWpKLGEg\"]},\"/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/PokeDexNFT.sol\":{\"keccak256\":\"0xbbd6958f1270d741c9eeb4c1d38968fd08bc3018496e353f456953fbd088ee51\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1a3bf64520d0a7324e18eb726df3069957a930f9cbceacc1f7691f5652a66d46\",\"dweb:/ipfs/QmSit6aqz6uNJJekbpLLGm22yspURsxg3ASVo5MF92hRoA\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5060e38061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c605f76c14602d575b600080fd5b604080518082018252600b81526a12195b1b1bc815dbdc9b1960aa1b60208201529051605891906061565b60405180910390f35b600060208083528351808285015260005b81811015608c578581018301518582016040015282016072565b506000604082860101526040601f19601f830116850101925050509291505056fea264697066735822122088a87c682b8964c25b637e7db51daa263d6763cbeb6cb5f8c238a1ac8594301b64736f6c63430008130033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063c605f76c14602d575b600080fd5b604080518082018252600b81526a12195b1b1bc815dbdc9b1960aa1b60208201529051605891906061565b60405180910390f35b600060208083528351808285015260005b81811015608c578581018301518582016040015282016072565b506000604082860101526040601f19601f830116850101925050509291505056fea264697066735822122088a87c682b8964c25b637e7db51daa263d6763cbeb6cb5f8c238a1ac8594301b64736f6c63430008130033",
+    "sourceMap": "237:114:14:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "237:114:14:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;256:93;322:20;;;;;;;;;;;-1:-1:-1;;;322:20:14;;;;256:93;;;;322:20;256:93;:::i;:::-;;;;;;;;14:548:15;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;298:3;483:1;478:2;469:6;458:9;454:22;450:31;443:42;553:2;546;542:7;537:2;529:6;525:15;521:29;510:9;506:45;502:54;494:62;;;;14:548;;;;:::o",
+    "sourcePath": "/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/PokeDexNFT.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.19+commit.7dd6d404"
+    },
+    "ast": {
+        "absolutePath": "/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/PokeDexNFT.sol",
+        "exportedSymbols": {
+            "Address": [
+                460
+            ],
+            "Context": [
+                482
+            ],
+            "ERC165": [
+                735
+            ],
+            "ERC721": [
+                2549
+            ],
+            "ERC721Enumerable": [
+                2887
+            ],
+            "IERC165": [
+                747
+            ],
+            "IERC721": [
+                3003
+            ],
+            "IERC721Enumerable": [
+                3034
+            ],
+            "IERC721Metadata": [
+                3061
+            ],
+            "IERC721Receiver": [
+                130
+            ],
+            "Math": [
+                1613
+            ],
+            "NFT": [
+                3075
+            ],
+            "Ownable": [
+                112
+            ],
+            "SignedMath": [
+                1718
+            ],
+            "Strings": [
+                711
+            ]
+        },
+        "id": 3076,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "absolutePath": "/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/ERC721.sol",
+                "file": "./ERC721.sol",
+                "id": 3063,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 3076,
+                "sourceUnit": 2550,
+                "src": "33:22:14",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/Users/sam4130/Documents/Blockchain/pokedex-nft/src/contracts/ERC721Enumerable.sol",
+                "file": "./ERC721Enumerable.sol",
+                "id": 3064,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 3076,
+                "sourceUnit": 2888,
+                "src": "56:32:14",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/access/Ownable.sol",
+                "file": "/Users/sam4130/Documents/Blockchain/pokedex-nft/node_modules/@openzeppelin/contracts/access/Ownable.sol",
+                "id": 3065,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 3076,
+                "sourceUnit": 113,
+                "src": "89:113:14",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "id": 3066,
+                "literals": [
+                    "solidity",
+                    ">=",
+                    "0.7",
+                    ".0",
+                    "<",
+                    "0.9",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "204:31:14"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "NFT",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 3075,
+                "linearizedBaseContracts": [
+                    3075
+                ],
+                "name": "NFT",
+                "nameLocation": "246:3:14",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 3073,
+                            "nodeType": "Block",
+                            "src": "312:37:14",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "hexValue": "48656c6c6f20576f726c64",
+                                        "id": 3071,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "string",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "329:13:14",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_stringliteral_592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba",
+                                            "typeString": "literal_string \"Hello World\""
+                                        },
+                                        "value": "Hello World"
+                                    },
+                                    "functionReturnParameters": 3070,
+                                    "id": 3072,
+                                    "nodeType": "Return",
+                                    "src": "322:20:14"
+                                }
+                            ]
+                        },
+                        "functionSelector": "c605f76c",
+                        "id": 3074,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "helloWorld",
+                        "nameLocation": "265:10:14",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 3067,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "275:2:14"
+                        },
+                        "returnParameters": {
+                            "id": 3070,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 3069,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 3074,
+                                    "src": "298:13:14",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 3068,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "298:6:14",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "297:15:14"
+                        },
+                        "scope": 3075,
+                        "src": "256:93:14",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 3076,
+                "src": "237:114:14",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:318:14"
+    },
+    "functionHashes": {
+        "helloWorld()": "c605f76c"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "45400",
+            "executionCost": "99",
+            "totalCost": "45499"
+        },
+        "external": {
+            "helloWorld()": "infinite"
+        }
+    }
+}
