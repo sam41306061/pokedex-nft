@@ -4,6 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { colorTypeGradients } from '../utils/utils';
 import Tooltip from '@material-ui/core/Tooltip';
+import { Button } from '@material-ui/core';
 import Zoom from '@material-ui/core/Zoom';
 
 const Pokemon = ({ id, image, name, type, onElemClick }) => {
@@ -50,7 +51,11 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
                     )}
                 </div>
             </div>
+            <div style={{margin:"1.2rem"}}>
+                <Button variant='outlined'>Add To Cart</Button>
+            </div>
         </div>
+        
     )
 }
 

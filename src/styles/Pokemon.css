@@ -129,7 +129,6 @@ h3 {
   align-content: center;
   align-items: center;
 }
-
 .grass {
   background: var(--grass);
   box-shadow: 0 0 20px var(--grass);
@@ -241,7 +240,7 @@ h3 {
   .thumbnail__container {
     min-width: 175px;
     height: 225px;
-    margin: 1.25rem 0.75rem;
+    margin: 2.25rem 0.75rem;
     padding: 1.25rem 0;
   }
   .image__container {

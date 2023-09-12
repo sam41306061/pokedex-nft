@@ -1,6 +1,8 @@
 import React from 'react';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import Pokedex from "../assets/images/pokedex.png";
+
+import { Button } from '@material-ui/core';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 class Header extends React.Component {
 
@@ -51,8 +53,10 @@ class Header extends React.Component {
                     <div className="poke__logos noselect">
                         <img src={Pokedex} alt="pokelogo" className="poke__logo" />
                     </div>
-                    <div className="pokeball__box github__icon" onClick={this.openGithub}>
-                        <GitHubIcon></GitHubIcon>
+                    <div className="pokeball__box">
+                        <Button variant="outlined" startIcon={<AddShoppingCartIcon />}> 
+                         1 
+                        </Button>
                     </div>
                 </div>
             </>
