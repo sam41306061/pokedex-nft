@@ -51,7 +51,7 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
                     )}
                 </div>
             </div>
-            <div style={{margin:"1.2rem"}}>
+            <div style={{marginTop:"2.35rem"}}>
                 <Button variant='outlined'>Add To Cart</Button>
             </div>
         </div>
