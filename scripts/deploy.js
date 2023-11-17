@@ -1,54 +1,18 @@
+const hre = require('hardhat');
+
 async function main() {
+  const PokeDexNFT = await hre.ethers.getContractFactory('PokeDexNFT');
+  console.log('Deploying PokeDexNFT contract');
 
-  const {time} = require("@nomicfoundation/hardhat-toolbox/network-helpers");
-  const [deployer] = await ethers.getSigners();
+  const pdxnft = await PokeDexNFT.deploy('0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65');
+  await pdxnft.deployed();
 
-  console.log("Deploying contracts with the account:", deployer.address);
-  console.log("Account balance:", (await deployer.getBalance()).toString());
-
-  // deploy contracts here:
-    const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-    const ONE_GWEI = 1_000_000_000;
-    const lockedAmount = ethers.BigNumber.from(ONE_GWEI);
-    const unlockTime = ethers.BigNumber.from(await time.latest()).add(ONE_YEAR_IN_SECS)
-
-  const LockContract = await ethers.getContractFactory('Lock');
-
-  const lockked = await LockContract.deploy({
-    lockedAmount:lockedAmount, 
-    unlockTime:unlockTime
-  });
-  await lockked.deployed();
-  console.log('We have successfully deployed lockked');
-  
-  // For each contract, pass the deployed contract and name to this function to save a copy of the contract ABI and address to the front end.
-  saveFrontendFiles(lockked, 'Lock');
+  console.log('PokeDexNFT deployed to:', pdxnft.address);
 }
-
-function saveFrontendFiles(contract, name) {
-  const fs = require("fs");
-  const contractsDir = __dirname + "/../../frontend/contractsData";
-
-  if (!fs.existsSync(contractsDir)) {
-    fs.mkdirSync(contractsDir);
-  }
-
-  fs.writeFileSync(
-    contractsDir + `/${name}-address.json`,
-    JSON.stringify({ address: contract.address }, undefined, 2)
-  );
-
-  const contractArtifact = artifacts.readArtifactSync(name);
-
-  fs.writeFileSync(
-    contractsDir + `/${name}.json`,
-    JSON.stringify(contractArtifact, null, 2)
-  );
-}
-
+// boiler plate execute code
 main()
   .then(() => process.exit(0))
-  .catch(error => {
+  .catch((error) => {
     console.error(error);
     process.exit(1);
   });
