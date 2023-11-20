@@ -6,6 +6,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @custom:security-contact schoenbergwebtools.com
 contract PokeDexNFT is ERC721, Ownable {
+    
+    struct PokeDexNFT {
+        string name;
+        string image;
+        uint rarity;
+    }
     uint256 private _nextTokenId;
 
     constructor(address initialOwner)

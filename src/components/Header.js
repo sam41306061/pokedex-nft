@@ -1,7 +1,7 @@
 import React from 'react';
 import Pokedex from "../assets/images/pokedex.png";
 
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 class Header extends React.Component {
@@ -52,6 +52,13 @@ class Header extends React.Component {
                     </div>
                     <div className="poke__logos noselect">
                         <img src={Pokedex} alt="pokelogo" className="poke__logo" />
+                    </div>
+                    <div className="filter__items">
+                        <Button>Connect your Account</Button>
+                        <Typography>0x000</Typography>
+                    </div>
+                    <div className="filter__items">
+                        <Typography>Balance #</Typography>
                     </div>
                     <div className="pokeball__box">
                         <Button variant="outlined" startIcon={<AddShoppingCartIcon />}> 
